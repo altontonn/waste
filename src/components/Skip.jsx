@@ -15,7 +15,9 @@ const SkipList = () => {
               key={skip.id}
               onClick={() => setSelectedSkipId(skip.id)}
               className={`rounded-2xl overflow-hidden shadow-lg bg-darkgray p-8 hover:shadow-2xl transition-shadow duration-300 hover:cursor-pointer ${
-                isSelected ? "border-2 border-brandblue" : "border-2 border-lightgray hover:border-blue-600/25"
+                isSelected
+                  ? "border-2 border-brandblue"
+                  : "border-2 border-lightgray hover:border-blue-600/25"
               }`}
             >
               <div className="relative w-full h-48">
@@ -27,6 +29,11 @@ const SkipList = () => {
                 <span className="absolute top-2 right-2 bg-brandblue text-white text-sm font-semibold px-2 py-1 rounded-md shadow-md">
                   {skip.size} Yards
                 </span>
+                {!skip.allowed_on_road && (
+                    <div className="absolute bottom-2 font-semibold left-2 text-yellow-600 bg-black text-xs px-2 py-1 rounded">
+                      Not allowed on the road
+                    </div>
+                  )}
               </div>
 
               <div className="p-5">
