@@ -20,7 +20,7 @@
 ## 🚀 My Approach
 ### 🧱 Project Structure
 
-1. components/SkipList.jsx – Fetches data and renders skip cards.
+1. components/Skip.jsx – Fetches data and renders skip cards.
 
 2. components/Header.jsx – Navigation between steps (Postcode, Waste Type, etc.).
 
