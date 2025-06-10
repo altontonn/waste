@@ -1,71 +1,78 @@
-# Project Name
+### 🛠️ Wewantwaste - Skip Selection Page Redesign\
 
-> Description the project.
+## 📋 Challenge Summary
+The goal of this challenge was to redesign the 'Choose Your Skip Size' page from wewantwaste.co.uk, while keeping its functionality int
 
+API - https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft
 
-## Built With
+🎯 Objectives
+✅ Redesign the skip selection page with a modern, clean UI.
 
-- Major languages
-- Frameworks
-- Technologies used
+✅ Ensure full responsiveness across mobile, tablet, and desktop.
 
-## Live Demo (if available)
+✅ Use React best practices (components, hooks, reusability).
 
-[Live Demo Link](https://livedemo.com)
+✅ Maintain original page functionality (select skip, view price, etc.).
 
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+✅ Deliver clear, clean, and maintainable code with documentation.
 
 
-To get a local copy up and running follow these simple example steps.
+🚀 My Approach
+🧱 Project Structure
 
-### Prerequisites
+components/SkipList.jsx – Fetches data and renders skip cards.
 
-### Setup
+components/Header.jsx – Navigation between steps (Postcode, Waste Type, etc.).
 
-### Install
+contexts/SkipContext.jsx – Context API for managing skip state (optional but used for extensibility).
 
-### Usage
-
-### Run tests
-
-### Deployment
+App.jsx – Sets up routing and renders main content.
 
 
+🎨 UI/UX Enhancements
+Redesigned layout using Tailwind CSS for styling.
 
-## Authors
+Skip cards are modernized with hover effects, responsive layout, and improved readability.
 
-👤 **Author1**
+Added icons and a navigation menu to simulate the multi-step process.
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+Highlighted selected skip with dynamic border and visual feedback.
 
-👤 **Author2**
+“Not allowed on road” warning is visually separated for clarity.
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+📱 Responsiveness
+Used Tailwind responsive classes (md:, lg:, etc.) to adapt layout:
 
-## 🤝 Contributing
+Grid layout changes columns based on screen size.
 
-Contributions, issues, and feature requests are welcome!
+Menu collapses into a hamburger on small screens (mobile).
 
-Feel free to check the [issues page](../../issues/).
+Font sizes and spacing adjust for legibility across devices.
 
-## Show your support
+🔌 Data Handling
+Fetched skips using fetch from the provided API endpoint.
 
-Give a ⭐️ if you like this project!
+Used useEffect and useState to handle loading, error, and render states.
 
-## Acknowledgments
+Allowed selection of skip card and maintained state with useState.
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
-## 📝 License
+🧪 How to Run
+bash
+Copy
+Edit
+# Clone repo and navigate in
+npm install
+npm run dev
 
-This project is [MIT](./MIT.md) licensed.
+📦 Tech Stack
+⚛️ React
+
+💨 Tailwind CSS
+
+📡 Fetch API
+
+🧠 React Hooks (useState, useEffect)
+
+🧭 React Router (for navigation steps)
+
